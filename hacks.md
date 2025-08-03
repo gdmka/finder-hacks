@@ -23,3 +23,17 @@ To undo:
 
 `defaults delete com.apple.dock autohide-time-modifier;killall Dock`
 
+**More than four commands for text context in the submenu.** 
+
+`defaults write -g NSServicesMinimumItemCountForContextSubmenu -int 99`
+
+To undo:
+
+`defaults delete -g NSServicesMinimumItemCountForContextSubmenu`
+
+
+****
+
+`defaults write -g NSServicesMinimumItemCountForContextSubmenu -int 99`
+
+
