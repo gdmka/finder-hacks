@@ -30,10 +30,3 @@ To undo:
 To undo:
 
 `defaults delete -g NSServicesMinimumItemCountForContextSubmenu`
-
-
-****
-
-`defaults write -g NSServicesMinimumItemCountForContextSubmenu -int 99`
-
-
