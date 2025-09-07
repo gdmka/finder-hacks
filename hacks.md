@@ -30,3 +30,13 @@ To undo:
 To undo:
 
 `defaults delete -g NSServicesMinimumItemCountForContextSubmenu`
+
+
+
+**Quit Finder just like any other app.** 
+
+`defaults write com.apple.finder QuitMenuItem -bool YES `
+
+To undo:
+
+`defaults write com.apple.finder QuitMenuItem -bool NO`
