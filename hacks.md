@@ -44,11 +44,11 @@ To undo:
 
 **Disable relative date.**
 
-`defaults write com.apple.finder FXUseRelativeDates -bool true`
+`defaults write com.apple.finder FXUseRelativeDates -bool false`
 
 Undo:
 
-`defaults write com.apple.finder FXUseRelativeDates -bool false`
+`defaults write com.apple.finder FXUseRelativeDates -bool true`
 
 **Set format for date columns for proper sorting.**
 
