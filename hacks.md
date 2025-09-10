@@ -40,3 +40,20 @@ To undo:
 To undo:
 
 `defaults write com.apple.finder QuitMenuItem -bool NO`
+
+
+**Disable relative date.**
+
+`defaults write com.apple.finder FXUseRelativeDates -bool true`
+
+Undo:
+
+`defaults write com.apple.finder FXUseRelativeDates -bool false`
+
+**Set format for date columns for proper sorting.**
+
+`defaults write NSGlobalDomain AppleICUDateFormatStrings -dict \
+  1 "dd-MM-yyyy" \
+  2 "dd-MM-yyyy" \
+  3 "dd-MM-yyyy" \
+  4 "dd-MM-yyyy"`
