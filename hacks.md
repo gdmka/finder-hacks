@@ -57,3 +57,19 @@ Undo:
   2 "dd-MM-yyyy" \
   3 "dd-MM-yyyy" \
   4 "dd-MM-yyyy"`
+
+**Set 2.8 hour delay for macOS dock on hover: pseudo "permanent" hiding.**
+
+`defaults write com.apple.dock autohide-delay -float 10000 && killall Dock`
+
+Undo:
+
+`defaults write com.apple.dock autohide-time-modifier -float 3 && killall Dock`
+
+Total revert:
+
+```bash
+defaults delete com.apple.dock autohide-delay
+defaults delete com.apple.dock autohide-time-modifier
+killall Dock
+```
