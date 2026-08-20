@@ -73,3 +73,15 @@ defaults delete com.apple.dock autohide-delay
 defaults delete com.apple.dock autohide-time-modifier
 killall Dock
 ```
+
+**Drag window with mouse holding Cmd + Ctrl**
+
+```bash
+defaults write -g NSWindowShouldDragOnGesture -bool true
+```
+
+Undo:
+
+```bash
+defaults delete -g NSWindowShouldDragOnGesture
+```
